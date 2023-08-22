@@ -26,7 +26,7 @@ Route::post('/createclient', "App\Http\Controllers\ClientController@saveClient")
 
 Route::get('/export-csv', "App\Http\Controllers\CsvExportController@export");
 
-
+// Refactor? Not needed?
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
