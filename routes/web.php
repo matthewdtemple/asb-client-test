@@ -23,3 +23,6 @@ Route::get('/createclient', function () {
 });
 
 Route::post('/createclient', "App\Http\Controllers\ClientController@saveClient");
+
+Route::get('/export-csv', "App\Http\Controllers\CsvExportController@export");
+
